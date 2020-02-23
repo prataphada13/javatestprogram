@@ -1,6 +1,12 @@
 package com.milkbaket.testProject;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
@@ -41,7 +47,7 @@ public class TestNGTest {
 	public void afterClassEvent() {
 		System.out.println("This is after class");
 	}
-	@Test(priority=1)
+	@Test(priority=1, enabled=true)
 	public void firstTestEvent() {
 		System.out.println("This is first Test");
 	}
